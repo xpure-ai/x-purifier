@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "X Purifier"
+  },
+  "extDescription": {
+    "message": "還你一個純淨的X(twitter)，自動屏蔽廣告/推廣/付費合作/AI生成內容"
+  },
+  "popupTitle": {
+    "message": "X Purifier 設置"
+  },
+  "slogan": {
+    "message": "還你一個純淨的X"
+  },
+  "groupTweetPurify": {
+    "message": "推文淨化"
+  },
+  "blockAds": {
+    "message": "廣告"
+  },
+  "blockPromoted": {
+    "message": "推廣"
+  },
+  "blockPaid": {
+    "message": "付費合作關係"
+  },
+  "blockAIGenerated": {
+    "message": "由人工智慧 (AI) 生成"
+  },
+  "groupRightPurify": {
+    "message": "右側模塊"
+  },
+  "blockPremium": {
+    "message": "訂閱 Premium"
+  },
+  "blockRecommended": {
+    "message": "跟隨誰"
+  },
+  "blockTrends": {
+    "message": "有什麼新鮮事"
+  },
+  "blockFooter": {
+    "message": "頁腳"
+  }
+}

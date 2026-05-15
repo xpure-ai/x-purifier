@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Purifier</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            width: 260px;
+            margin: 0;
+            padding: 16px;
+            background-color: #ffffff;
+            color: #0f1419;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding-top: 4px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .logo {
+            width: 42px;
+            height: 42px;
+            margin-right: 12px;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0f1419;
+            margin-bottom: 2px;
+        }
+
+        .header .slogan {
+            font-size: 12px;
+            color: #536471;
+            font-weight: normal;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eff3f4;
+            font-size: 14px;
+        }
+
+        .group-container .item:last-child {
+            border-bottom: none;
+        }
+
+        .group-title {
+            font-size: 13px;
+            font-weight: normal;
+            color: #71767b;
+            margin-top: 16px;
+            padding-bottom: 8px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #eff3f4;
+        }
+
+        /* Switch styles */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 36px;
+            height: 20px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 20px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #8240FF;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(16px);
+        }
+
+        .github-link {
+            color: #536471;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s;
+        }
+
+        .github-link:hover {
+            color: #0f1419;
+        }
+
+        .github-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="img/logo_48.png" alt="X Purifier Logo" class="logo">
+            <div class="header-text">
+                <div class="title">X Purifier</div>
+                <div class="slogan" data-i18n="slogan"></div>
+            </div>
+        </div>
+        <a href="https://github.com/xpure-ai/x-purifier" target="_blank" class="github-link">
+            <svg class="github-icon" viewBox="0 0 24 24">
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <div class="group-title" data-i18n="groupTweetPurify"></div>
+    <div class="group-container">
+        <div class="item">
+            <span data-i18n="blockAds"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockAds">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="item">
+            <span data-i18n="blockPromoted"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockPromoted">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="item">
+            <span data-i18n="blockPaid"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockPaid">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="item">
+            <span data-i18n="blockAIGenerated"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockAIGenerated">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="group-title" data-i18n="groupRightPurify"></div>
+    <div class="group-container">
+        <div class="item">
+            <span data-i18n="blockPremium"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockPremium">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="item">
+            <span data-i18n="blockRecommended"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockRecommended">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="item">
+            <span data-i18n="blockTrends"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockTrends">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="item">
+            <span data-i18n="blockFooter"></span>
+            <label class="switch">
+                <input type="checkbox" id="blockFooter">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

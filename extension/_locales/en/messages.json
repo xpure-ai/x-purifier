@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "X Purifier"
+  },
+  "extDescription": {
+    "message": "Pure X (Twitter) timeline, automatically block ads/promoted/paid partnership/AI-generated content in timeline"
+  },
+  "popupTitle": {
+    "message": "X Purifier Settings"
+  },
+  "slogan": {
+    "message": "Pure X (Twitter) timeline"
+  },
+  "groupTweetPurify": {
+    "message": "Timeline purification"
+  },
+  "blockAds": {
+    "message": "Ad"
+  },
+  "blockPromoted": {
+    "message": "Promoted"
+  },
+  "blockPaid": {
+    "message": "Paid Partnership"
+  },
+  "blockAIGenerated": {
+    "message": "Made with AI"
+  },
+  "groupRightPurify": {
+    "message": "Right Column"
+  },
+  "blockPremium": {
+    "message": "Subscribe to Premium"
+  },
+  "blockRecommended": {
+    "message": "Who to follow"
+  },
+  "blockTrends": {
+    "message": "Trends"
+  },
+  "blockFooter": {
+    "message": "Footer"
+  }
+}

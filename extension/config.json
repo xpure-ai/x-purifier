@@ -1,0 +1,42 @@
+{
+    "wtfSspAdSelector": [
+        "[data-testid=\"whoToFollowSspAd\"]"
+    ],
+    "keywords": {
+        "ads": [
+            "ad",
+            "推荐",
+            "广告",
+            "推廣",
+            "廣告"
+        ],
+        "promoted": [
+            "已推广",
+            "promoted",
+            "Boosted",
+            "推廣"
+        ],
+        "paid": [
+            "付费合作",
+            "paid partnership",
+            "付費合作關係"
+        ],
+        "aiGenerated": [
+            "由 ai 生成",
+            "由ai生成",
+            "Made with AI",
+            "由人工智慧 (AI) 生成"
+        ],
+        "premium": [
+            "Premium"
+        ],
+        "recommended": [
+            "推荐关注",
+            "Who to follow",
+            "跟隨誰"
+        ]
+    },
+    "primaryColumnSelector": "[data-testid=\"primaryColumn\"]",
+    "sidebarColumnSelector": "[data-testid=\"sidebarColumn\"]",
+    "adSpanSelector": "span:not([data-testid=\"tweetText\"] *)"
+}
