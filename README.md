@@ -4,7 +4,7 @@
 
 # X Purifier
 
-> Purify your X experience
+> Pure X (Twitter) timeline. 
 
 [中文文档](README_CN.md)
 
@@ -18,8 +18,8 @@ A lightweight Chrome extension that blocks ads, promotions and distracting eleme
 
 | Feature | Description |
 |---|---|
-| **Ad Tweets** | Block tweets marked as "Ad", "广告", "推荐" |
-| **Promoted** | Block "Promoted" and "已推广" tweets |
+| **Ad Tweets** | Block tweets marked as "Ad" |
+| **Promoted** | Block "Promoted" and "Boosted" tweets |
 | **Paid Partnership** | Block "Paid Partnership" tweets |
 | **AI Generated** | Block "Made with AI" content on the home timeline |
 
